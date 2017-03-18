@@ -5,14 +5,14 @@
 	    flex-wrap: nowrap;
 	    justify-content: flex-start;
 	    align-content: stretch;
-	    align-items: center;
+	    align-items: stretch;
 	}
 	header ul li{
 	    order: 0;
-	    flex: 0 1 auto;
-	    align-self: auto;
+	    flex: 1 1 auto;
+	    align-self: center;
 	}
 	header ul li#logo{
-	    flex: 1 1 auto;
+	    text-align:left;width:50%
 	}
 }
