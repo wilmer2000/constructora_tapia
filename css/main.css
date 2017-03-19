@@ -59,9 +59,9 @@ header li#logo img{width:auto;height:100%;max-height:68px}
 .slider .img_:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;background: -moz-linear-gradient(-45deg,  rgba(125,185,232,0) 0%, rgba(52,152,219,1) 100%);background: -webkit-linear-gradient(-45deg,  rgba(125,185,232,0) 0%,rgba(52,152,219,1) 100%);background: linear-gradient(135deg,  rgba(125,185,232,0) 0%,rgba(52,152,219,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#3498db',GradientType=1 );}
 .scroll_down {position: absolute;background: #2C3E50;color: #FFF;bottom: 30px;left: 30px;z-index: 2;padding: 10px 15px;text-transform: uppercase;font-family: 'OpenSansSemibold';letter-spacing:2px;}
 
-section#quienes_somos{padding:150px 0;}
-section#quienes_somos .flex_cont_ .left_{padding-right:50px;}
-section#quienes_somos .flex_cont_ .right_{padding-left:50px;}
+section#proyectos{padding:150px 0;}
+section#proyectos .flex_cont_ .left_{padding-right:50px;}
+section#proyectos .flex_cont_ .right_{padding-left:50px;}
 
 .cont_slider_project{position:relative;width:100%;height: 100%;}
 .cont_slider_project .back_{position: absolute;width: 100%;height: 300px;background: url(../img/concrete_text.jpg);background-size: cover;background-position:center;background-repeat: no-repeat;top: 50%;left: 0;margin-top: -150px;}
@@ -71,3 +71,17 @@ section#quienes_somos .flex_cont_ .right_{padding-left:50px;}
 .cont_slider_project .controls a svg{display: block;width:30px;}
 .carousel_project {margin-left:auto;max-width:375px!important;border:solid 10px #2C3E50;z-index: 1;position: relative;}
 .carousel_project img{max-width:375px!important;height:auto!important;}
+
+section#quienes_somos{padding:150px 0;}
+
+
+section#servicios{padding:150px 0;}
+
+
+section#galeria{padding:150px 0;}
+
+
+section#testimonios{padding:150px 0;}
+
+
+section#contacto{padding:150px 0;}
