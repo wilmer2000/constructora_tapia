@@ -73,13 +73,15 @@ section#proyectos .flex_cont_ .right_{padding-left:50px;}
 .carousel_project img{max-width:375px!important;height:auto!important;}
 
 section#quienes_somos{}
-section#quienes_somos .slider{display: table;clear:both;width:100%;margin-bottom:30px;}
+section#quienes_somos .slider{display: table;clear:both;width:100%;margin-bottom:60px;}
 section#quienes_somos .slider img{width:100%;height:auto;display:block;}
 section#quienes_somos .info_ .left_,
 section#quienes_somos .info_ .right_{text-align:center;}
+section#quienes_somos .intro_ h2:first-child{margin-top:0;}
+section#quienes_somos .intro_ h2{margin-top:60px;}
 
 
-section#vivienda{}
+section#vivienda{padding:150px 0;}
 section#vivienda h2{margin-bottom:30px;}
 section#vivienda .right_ h2,
 section#vivienda .right_ li p{text-align:left;}
@@ -101,7 +103,7 @@ section#vivienda .right_ li{padding-left:50px;}
 
 
 
-section#galeria{padding:150px 0;}
+section#galeria{}
 section#galeria>h2{text-align:center;margin-bottom:60px;}
 .gallery{
     display: flex;
@@ -125,13 +127,14 @@ section#galeria>h2{text-align:center;margin-bottom:60px;}
 .gallery li figure figcaption p a b{display: block;font-size: 3em;line-height: 1.5em;}
 
 
-section#testimonios{padding:150px 0;}
-
 
 section#contacto {padding:0;}
 section#contacto .map_ {position:relative;}
 section#contacto .map_ iframe{position: absolute;width:100%;height: 100%;top:0;left:0;}
 section#contacto .form_ {position:relative;background: rgb(44,62,80);background: -moz-linear-gradient(45deg, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 100%);background: -webkit-linear-gradient(45deg, rgba(44,62,80,1) 0%,rgba(52,152,219,1) 100%);background: linear-gradient(45deg, rgba(44,62,80,1) 0%,rgba(52,152,219,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#3498db',GradientType=1 );}
 section#contacto form {padding:30px;}
+section#contacto .form_group+.form_group {margin-top:15px;}
 section#contacto form h2 {color: #FFF;}
-section#contacto form label {color: #FFF;display: block;cursor:pointer;}
+section#contacto form label {color: #FFF;display: block;cursor:pointer;margin-bottom:5px;}
+section#contacto form input {width:100%;border:0;height:40px;color:#666;padding:5px 15px; line-height:1em;}
+section#contacto form textarea {width:100%;border:0;color:#666;padding:5px 15px; line-height:1em;resize:none;}
