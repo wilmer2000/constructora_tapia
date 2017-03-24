@@ -72,12 +72,14 @@ section#proyectos .flex_cont_ .right_{padding-left:50px;}
 .carousel_project {margin-left:auto;max-width:375px!important;border:solid 10px #2C3E50;z-index: 1;position: relative;}
 .carousel_project img{max-width:375px!important;height:auto!important;}
 
-section#quienes_somos{padding:150px 0;}
+section#quienes_somos{}
+section#quienes_somos .slider{display: table;clear:both;width:100%;margin-bottom:30px;}
+section#quienes_somos .slider img{width:100%;height:auto;display:block;}
 section#quienes_somos .info_ .left_,
 section#quienes_somos .info_ .right_{text-align:center;}
 
 
-section#vivienda{padding:150px 0;}
+section#vivienda{}
 section#vivienda h2{margin-bottom:30px;}
 section#vivienda .right_ h2,
 section#vivienda .right_ li p{text-align:left;}
@@ -100,6 +102,7 @@ section#vivienda .right_ li{padding-left:50px;}
 
 
 section#galeria{padding:150px 0;}
+section#galeria>h2{text-align:center;margin-bottom:60px;}
 .gallery{
     display: flex;
     flex-direction: row;
