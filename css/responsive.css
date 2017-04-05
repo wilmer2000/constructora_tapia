@@ -1,3 +1,25 @@
+@media (max-width:1024px){
+	section#vivienda .flex_cont_,
+	section#proyectos .flex_cont_{flex-direction: column;}
+	section#vivienda .flex_cont_ div[class*='img_house'],
+	section#proyectos .flex_cont_ div[class*='img_house']{height:300px;}
+	section#proyectos .flex_cont_ .left_,
+	section#proyectos .flex_cont_ .right_{padding:0;}
+	section#proyectos .flex_cont_ .right_{margin-top:100px;}
+	section#vivienda .flex_cont_:first-child .right_ {order:1;}
+	section#vivienda .flex_cont_:first-child .left_ {order:2;}
+	section#vivienda .list_{padding:50px;}
+	.flex_cont_.doble .right_,
+	.flex_cont_.doble .left_{width:100%}
+
+}
+@media (max-width:1024px){
+	.container{padding-left:30px;padding-right:30px}
+	.gallery li{width:50%;}
+	.flex_cont_.triple .flex_item:first-child img{padding:15px;}
+
+
+}
 @media (min-width:768px){
 	header ul{
 	    display: flex;
@@ -17,25 +39,10 @@
 	}
 
 	header li a:hover{opacity:0.6;}
-
-	.flex_cont_{
-	    display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: stretch;
-	    align-items: stretch;
-	}
-	.flex_cont_.doble .left_{
-	    order: 0;
-	    flex: 1 1 auto;
-	    align-self: auto;
-	    width:50%;
-	}
-	.flex_cont_.doble .right_{
-	    order: 0;
-	    flex: 1 1 auto;
-	    align-self: auto;
-	    width:50%;
-	}
 }
+@media (max-width:767px){
+	header{position:fixed!important;width:100%;height:100%;background:#FFF;transform: translateY(-100%);}
+	header ul{background:transparent;}
+}
+
+
