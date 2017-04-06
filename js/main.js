@@ -10,4 +10,10 @@ $(document).ready(function(){
 			slider_project.trigger('prev.owl.carousel');
 		}
 	});
+
+	$('.js_btn_menu').click(function(event){
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$('header').toggleClass('active');
+	})
 });
