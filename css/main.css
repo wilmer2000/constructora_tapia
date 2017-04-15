@@ -33,6 +33,7 @@ verde: 186628;
   font-weight: normal;
   font-style: normal;
 }
+body{opacity: 0;transition:all 500ms ease-in-out;}
 *{font-family: 'OpenSansLight', sans-serif;font-weight:300;font-size:16px;color:#666;box-sizing:border-box;}
 span,b,a,strong{font-family: inherit;color:inherit;}
 a,a:hover,a:active,a:focus{text-decoration: none;color:inherit;}
@@ -114,7 +115,7 @@ header li svg,
 .menu_stick li:first-child img{max-height:30px;}
 .menu_stick{position:fixed;top:0;left:0;width:100%;z-index: 90;background:rgb(39, 39, 39);transform: translateY(-100px);transition: all 250ms ease-in-out;}
 .menu_stick.stick{transform: translateY(0);}
-.menu_stick ul{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-content: stretch;align-items: stretch; }
+.menu_stick ul{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-content: stretch;align-items: stretch; margin: 0 auto;max-width:1200px;}
 .menu_stick ul li{order: 0;flex: 1 1 auto;align-self: center; }
 .menu_stick ul li a:hover{color:  #FE8603}
 
@@ -130,7 +131,8 @@ background: -ms-linear-gradient(top, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0
 background: linear-gradient(to bottom, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8603', endColorstr='#ffffff', GradientType=0 );
 }
-section#slider{padding:30px;position:relative;}
+section#slider,
+section#quienes_somos{padding:30px;position:relative;}
 .slider{height:100%;position:absolute;background-size: cover;background-position: center;width: 100%;top:0;left: 0;
     display: flex;
     flex-direction: row;
@@ -147,7 +149,10 @@ section#slider{padding:30px;position:relative;}
 .slider .text_ h2{color:#FFF;font-size:2em;display: inline-block;clear: both;font-family:'OpenSansLight'}
 .slider .img_{background:url(../img/building_2.jpg) no-repeat;background-size: cover;background-position: center;height:100%;width: 100%;}
 .scroll_down {position: absolute;background: #FE8603;color: #FFF;bottom: 60px;left: 50%;z-index: 2;padding: 10px 15px;text-transform: uppercase;font-family: 'OpenSansSemibold';letter-spacing:2px;margin-left:-80px;}
-
+#slider .btn_slider{position: absolute;top:50%;z-index: 40;transform: translateY(-50%);}
+#slider .btn_slider svg{display: block;width:70px;}
+#slider .btn_slider.next_{right:30px;}
+#slider .btn_slider.back_{left:30px;}
 .slider.into_section{position:relative;height:300px;overflow:hidden;margin-bottom:60px;}
 .slider.into_section:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
 background: rgba(254,134,3,0.56);
@@ -240,10 +245,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .gallery li:hover figcaption p{transform: translateX(0);opacity:1;}
 
 
-section#contacto {padding:0;}
-section#contacto .map_ {position:relative;}
+section#contacto {padding:30px 15px;}
+section#contacto .flex_cont_ {flex-wrap: wrap;}
+section#contacto .map_ {position:relative;width:100%;height: 350px;}
 section#contacto .map_ iframe{position: absolute;width:100%;height: 100%;top:0;left:0;}
-section#contacto .form_ {position:relative;background: rgb(44,62,80);
+section#contacto .photo_ {width:50%;background:url(../img/contact.jpg);background-size: cover;background-position: center;}
+section#contacto .form_ button{border:0;font-size:18px;display: inline-block;margin-left: auto;background:#FE8603;color: #FFF;text-align: center;font-family: 'MontserratBold', sans-serif;font-size: 18px;padding: 10px 50px;}
+section#contacto .form_ {position:relative;background: rgb(44,62,80);width:50%;
 background: rgb(68,29,4);
 background: -moz-linear-gradient(45deg,  rgba(68,29,4,1) 0%, rgba(76,56,20,1) 100%);
 background: -webkit-linear-gradient(45deg,  rgba(68,29,4,1) 0%,rgba(76,56,20,1) 100%);
@@ -273,4 +281,4 @@ footer .site_map {}
 footer .site_map a{color:#FE8603;}
 footer address p{font-style: normal;}
 
-
+#proyectos section#galeria .gallery li+li{margin-top:80px}
