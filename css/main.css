@@ -108,6 +108,8 @@ header li#logo a:hover,
 .menu_stick #logo_stick a:hover{opacity:1;}
 header li#logo img,
 .menu_stick li:first-child img{width:auto;height:100%;max-height:51px}
+header li svg,
+.menu_stick li svg{max-width: 28px;height: auto;display: block;width: 100%;margin-left: auto;}
 .menu_stick li:first-child a{padding:10px;}
 .menu_stick li:first-child img{max-height:30px;}
 .menu_stick{position:fixed;top:0;left:0;width:100%;z-index: 90;background:rgb(39, 39, 39);transform: translateY(-100px);transition: all 250ms ease-in-out;}
