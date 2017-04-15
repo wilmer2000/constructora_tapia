@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+	function header_sticky (){
+		var position = $('.menu_stick').offset().top;
+		if ( position > 150) {
+			$('.menu_stick').addClass('stick');
+		} else {
+			$('.menu_stick').removeClass('stick');
+		}
+	}
 	var slider_project = $('.js_carousel_project');
 	slider_project.owlCarousel({items:1,margin:0,autoWidth:true,loop:true,responsive:true,autoplay:true});
 
@@ -16,4 +25,10 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$('header').toggleClass('active');
 	})
+
+
+	$(document).scroll(function(event) {
+		header_sticky();
+	});
 });
+
