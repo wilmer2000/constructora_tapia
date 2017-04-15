@@ -33,7 +33,6 @@ verde: 186628;
   font-weight: normal;
   font-style: normal;
 }
-
 *{font-family: 'OpenSansLight', sans-serif;font-weight:300;font-size:16px;color:#666;box-sizing:border-box;}
 span,b,a,strong{font-family: inherit;color:inherit;}
 a,a:hover,a:active,a:focus{text-decoration: none;color:inherit;}
@@ -80,7 +79,7 @@ font-family: 'Open Sans', sans-serif; */
 .btn_menu.active span:first-child {transform: rotate(45deg) translateX(6px) translateY(5px);background:#FE8603}
 .btn_menu.active span:nth-child(2) {opacity: 0;background:#FE8603}
 .btn_menu.active span:last-child {transform: rotate(-45deg) translateX(6px) translateY(-5px);background:#FE8603}
-header{position:absolute;z-index:50;width:100%;top:0;left: 0;padding: 60px;}
+header{position:absolute;z-index:50;width:100%;top:0;left: 0;    padding: 50px 50px 20px;}
 header ul{
 /* background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
 background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%);
@@ -107,15 +106,27 @@ header li#logo a:hover,
 .menu_stick #logo_stick a:hover{opacity:1;}
 header li#logo img,
 .menu_stick #logo_stick img{width:auto;height:100%;max-height:51px}
-
-.menu_stick{position:fixed;top:0;left:0;width:100%;z-index: 90;background: #441d04;transform: translateY(-100px);transition: all 250ms ease-in-out;}
+.menu_stick #logo_stick img{max-height:30px;}
+.menu_stick{position:fixed;top:0;left:0;width:100%;z-index: 90;background:rgb(39, 39, 39);transform: translateY(-100px);transition: all 250ms ease-in-out;}
 .menu_stick.stick{transform: translateY(0);}
 .menu_stick ul{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-content: stretch;align-items: stretch; }
 .menu_stick ul li{order: 0;flex: 1 1 auto;align-self: center; }
+.menu_stick ul li a:hover{color:  #FE8603}
 .menu_stick #logo_stick{}
 
-section#slider{padding:30px;position:relative;height: 100vh}
-.slider{height:100%;position:relative;background:url(../img/building_2.jpg) no-repeat;background-size: cover;background-position: center;width: 100%;
+.owl_slide {position:relative;}
+.owl_slide:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
+background: rgba(254,134,3,0.56);
+background: -moz-linear-gradient(top, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,134,3,0.56)), color-stop(62%, rgba(255,255,255,0.21)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(254,134,3,0.56) 0%, rgba(255,255,255,0.21) 62%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8603', endColorstr='#ffffff', GradientType=0 );
+}
+section#slider{padding:30px;position:relative;}
+.slider{height:100%;position:absolute;background-size: cover;background-position: center;width: 100%;top:0;left: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -130,13 +141,7 @@ section#slider{padding:30px;position:relative;height: 100vh}
 .slider .text_ h1{color:#FFF;font-size: 3em;display: inline-block;clear: both;}
 .slider .text_ h2{color:#FFF;font-size:2em;display: inline-block;clear: both;font-family:'OpenSansLight'}
 .slider .img_{background:url(../img/building_2.jpg) no-repeat;background-size: cover;background-position: center;height:100%;width: 100%;}
-.slider:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
-background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0) 0%, rgba(231,96,14,0.65) 100%);
-background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0) 0%,rgba(231,96,14,0.65) 100%);
-background: linear-gradient(135deg,  rgba(0,0,0,0) 0%,rgba(231,96,14,0.65) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6e7600e',GradientType=1 );
-}
-.scroll_down {position: absolute;background: #FE8603;color: #FFF;bottom: 30px;left: 50%;z-index: 2;padding: 10px 15px;text-transform: uppercase;font-family: 'OpenSansSemibold';letter-spacing:2px;margin-left:-80px;}
+.scroll_down {position: absolute;background: #FE8603;color: #FFF;bottom: 60px;left: 50%;z-index: 2;padding: 10px 15px;text-transform: uppercase;font-family: 'OpenSansSemibold';letter-spacing:2px;margin-left:-80px;}
 
 section#proyectos{padding:150px 0;}
 section#proyectos .flex_cont_ .left_{padding-right:50px;}
@@ -162,7 +167,6 @@ section#quienes_somos .info_ .right_{text-align:center;padding:15px;}
 section#quienes_somos .intro_ h2:first-child{margin-top:0;}
 section#quienes_somos .intro_ h2{margin-top:60px;}
 
-
 section#vivienda{padding:150px 0;}
 section#vivienda h2{margin-bottom:30px;}
 section#vivienda .right_ h2,
@@ -186,7 +190,8 @@ section#vivienda .right_ li{padding-left:50px;}
 
 
 section#galeria{padding:30px;}
-section#galeria>h2{text-align:center;margin-bottom:60px;}
+section#galeria>h2{/* text-align:center; */margin-bottom:60px;}
+section#galeria .gallery li+li{margin-top:60px;}
 .gallery{
     display: flex;
     flex-direction: row;
@@ -201,7 +206,7 @@ section#galeria>h2{text-align:center;margin-bottom:60px;}
     align-self: stretch;
 }
 .gallery li *{transition: all 250ms ease-out}
-.gallery li figure{position:relative;}
+.gallery li figure{position:relative;overflow:hidden;}
 .gallery li figure img{width:100%;height: auto;display: block;}
 .gallery li figure figcaption{position:absolute;z-index: 1;bottom:0;left:0;width:100%;padding:15px;opacity:0;
   background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0) 0%, rgba(231,96,14,0.65) 100%);
@@ -212,6 +217,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .gallery li figure figcaption p a{font-size: inherit;color: inherit;line-height: inherit;font-family: 'OpenSansLight';display: block;}
 .gallery li figure figcaption p a b{display: block;font-size: 2em;line-height: 1.5em;line-height: 45px;margin-bottom: 10px;}
 
+.gallery li figure img{transition-duration:50s;transition-delay:500ms }
+.gallery li:hover figure img{transform: scale(1.5);}
 .gallery li:hover figcaption{opacity:1;}
 .gallery li:hover figcaption p{transform: translateX(0);opacity:1;}
 
@@ -248,4 +255,5 @@ footer p{color:#FFF;}
 footer .site_map {}
 footer .site_map a{color:#FE8603;}
 footer address p{font-style: normal;}
+
 

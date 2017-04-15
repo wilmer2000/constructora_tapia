@@ -26,6 +26,8 @@ $(document).ready(function(){
 		$('header').toggleClass('active');
 	})
 
+	var slider_principal = $('.owl_slide');
+	slider_principal.owlCarousel({items:1,margin:0,responsive:true,autoplay:true,loop:true})
 
 	$(document).scroll(function(event) {
 		header_sticky();
