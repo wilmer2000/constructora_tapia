@@ -38,7 +38,7 @@
 	    text-align:left;width:30%
 	}
 
-	header li a:hover{opacity:0.6;}
+	header li a:hover{/* opacity:0.6; */}
 	.menu_stick{display: block;}
 }
 @media (max-width:767px){
