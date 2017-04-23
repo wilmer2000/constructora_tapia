@@ -69,7 +69,7 @@ h3{font-size:2.2em;}
 h4{font-size:1.8em;}
 h5{font-size:1.4em;}
 h6{font-size:1em;}
-p{line-height:1.8em;text-align: justify;}
+p{line-height:1.8em;/* text-align: justify; */}
 /* font-family: 'Hammersmith One', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 .container{max-width:1200px;padding:0 15px;margin:0 auto;}
@@ -207,6 +207,14 @@ section#quienes_somos .info_ .left_,
 section#quienes_somos .info_ .right_{text-align:center;padding:15px;}
 section#quienes_somos .intro_ h2:first-child{margin-top:0;}
 section#quienes_somos .intro_ h2{margin-top:60px;}
+section#quienes_somos .flex_cont_+.flex_cont_{margin-top:150px;}
+section#quienes_somos .flex_cont_.doble .right_,
+section#quienes_somos .flex_cont_.doble .left_{align-self: center;}
+section#quienes_somos .flex_cont_.doble .right_{text-align: left;padding-left:15px;}
+section#quienes_somos .flex_cont_.doble .left_{text-align: right;padding-right:15px;}
+section#quienes_somos .flex_cont_.doble .right_ *{text-align: left;}
+section#quienes_somos .flex_cont_.doble .left_ *{text-align: right;}
+section#quienes_somos #cont_txt_quienes_somos img{max-width:400px;margin: 0 auto;}
 
 section#vivienda{padding:0 15px 30px;}
 section#vivienda h2{margin-bottom:30px;}
@@ -266,7 +274,7 @@ height:100%}
 .gallery li:hover figcaption p{transform: translateX(0);opacity:1;}
 
 
-section#contacto {padding:30px 15px;}
+section#contacto {/* padding:30px 15px; */}
 section#contacto .flex_cont_ {flex-wrap: wrap;}
 section#contacto .map_ {position:relative;width:100%;height: 350px;}
 section#contacto .map_ iframe{position: absolute;width:100%;height: 100%;top:0;left:0;}
@@ -342,3 +350,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .flex_cont_.owner_ .left_ {width:30%;}
 .flex_cont_.owner_ .right_ {width:70%;padding-left:30px;}
 .owner_ img{border:solid 15px #FFF;box-shadow:0 0 20px 0px rgba(0,0,0,0.2)}
+
+.cont_services {margin: 0 auto;max-width:940px;}
+section#vivienda .cont_services .list_{padding:0!important;}
+section#vivienda .cont_services .flex_cont_.doble >div{align-self: center;}
+.cont_services .flex_cont_.doble .left_{text-align:right;padding-right:15px;}
+.cont_services .flex_cont_.doble .right_{text-align:left;padding-left:15px;}
+.cont_services .flex_cont_.doble+.flex_cont_.doble {margin-top:150px}
