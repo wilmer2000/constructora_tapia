@@ -331,6 +331,7 @@ footer p#email{padding-left:25px;background:url(../img/email_icon.svg) no-repeat
 #proyectos section#galeria .gallery li+li{margin-top:80px}
 
 
+#home #content{background: rgb(33, 33, 33)}
 #home section#slider{height: 100vh}
 #home section#slider .owl_slide{overflow: hidden;height: calc(100vh - 60px);}
 
@@ -357,3 +358,34 @@ section#vivienda .cont_services .flex_cont_.doble >div{align-self: center;}
 .cont_services .flex_cont_.doble .left_{text-align:right;padding-right:15px;}
 .cont_services .flex_cont_.doble .right_{text-align:left;padding-left:15px;}
 .cont_services .flex_cont_.doble+.flex_cont_.doble {margin-top:150px}
+
+
+.btn_view_gallery{display: block;margin-top:15px;border:solid 1px #FFF;margin-left: auto;max-width: 200px;text-align: center;padding:5px 15px;cursor: pointer;}
+.btn_view_gallery:hover{background:#FFF;color:#C02729;}
+
+
+.text_proyect{margin-top:20px;}
+.cont_mini_gallery{
+  display: none;
+}
+.mini_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0 -15px;
+    padding: 0;
+}
+
+.mini_gallery li{
+    order: 0;
+    flex: 0 1 25%;
+    align-self: auto;
+    margin:0!important;
+    padding: 0;
+}
+.mini_gallery li a{padding:15px;display: block;}
+.mini_gallery li:hover a img{transform: scale(1.05);box-shadow:0 0 50px 0px rgba(0,0,0,0.2)}
