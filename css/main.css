@@ -274,24 +274,22 @@ height:100%}
 .gallery li:hover figcaption p{transform: translateX(0);opacity:1;}
 
 
-section#contacto {/* padding:30px 15px; */}
-section#contacto .flex_cont_ {flex-wrap: wrap;}
-section#contacto .map_ {position:relative;width:100%;height: 350px;}
-section#contacto .map_ iframe{position: absolute;width:100%;height: 100%;top:0;left:0;}
-section#contacto .photo_ {width:50%;background:url(../img/contact.jpg);background-size: cover;background-position: center;}
-section#contacto .form_ button{border:0;font-size:18px;display: inline-block;margin-left: auto;background:#C02729;color: #FFF;text-align: center;font-family: 'LibreBaskervilleRegular', sans-serif;font-size: 18px;padding: 10px 50px;}
-section#contacto .form_ {position:relative;background: rgb(44,62,80);width:50%;
-background: rgb(68,29,4);
-background: -moz-linear-gradient(45deg,  rgba(68,29,4,1) 0%, rgba(76,56,20,1) 100%);
-background: -webkit-linear-gradient(45deg,  rgba(68,29,4,1) 0%,rgba(76,56,20,1) 100%);
-background: linear-gradient(45deg,  rgba(68,29,4,1) 0%,rgba(76,56,20,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#441d04', endColorstr='#4c3814',GradientType=1 );}
-section#contacto form {padding:30px;}
-section#contacto .form_group+.form_group {margin-top:15px;}
-section#contacto form h2 {color: #FFF;}
-section#contacto form label {color: #FFF;display: block;cursor:pointer;margin-bottom:5px;}
-section#contacto form input {width:100%;border:0;height:40px;color:#666;padding:5px 15px; line-height:1em;}
-section#contacto form textarea {width:100%;border:0;color:#666;padding:5px 15px; line-height:1em;resize:none;}
+#contacto {/* padding:30px 15px; */}
+#contacto .flex_cont_ {flex-wrap: wrap;}
+#contacto .map {position:relative;width:100%;margin:50px 0;}
+#contacto .map iframe{width:100%;height: 350px;top:0;left:0;}
+#contacto .photo_ {width:50%;background:url(../img/contact.jpg);background-size: cover;background-position: center;}
+#contacto .form_ button{border:0;font-size:18px;display: inline-block;margin-left: auto;background:#C02729;color: #FFF;text-align: center;font-family: 'LibreBaskervilleRegular', sans-serif;font-size: 18px;padding: 10px 50px;}
+#contacto .form_ {position:relative;width:40%;}
+#contacto .flex_cont_ .left_ {padding-right: 15px;}
+#contacto .flex_cont_ .right_ {padding-left: 15px;}
+#contacto .form_group+.form_group {margin-top:15px;}
+#contacto form h2 {}
+#contacto form label {display: block;cursor:pointer;margin-bottom:5px;}
+#contacto form input {width:100%;border:solid 2px #C02729;height:40px;color:#666;padding:5px 15px; line-height:1em;}
+#contacto form textarea {width:100%;border:solid 2px #C02729;color:#666;padding:5px 15px; line-height:1em;resize:none;}
+#contacto #cont_txt_quienes_somos .social li{background:#C02729 }
+#contacto #cont_txt_quienes_somos .social li a img{width:40px;}
 
 
 footer .flex_cont_ .flex_item:first-child{align-self: flex-start;text-align:center;}
@@ -389,3 +387,13 @@ section#vivienda .cont_services .flex_cont_.doble >div{align-self: center;}
 }
 .mini_gallery li a{padding:15px;display: block;}
 .mini_gallery li:hover a img{transform: scale(1.05);box-shadow:0 0 50px 0px rgba(0,0,0,0.2)}
+
+.contacto_list {margin-bottom:60px;}
+.contacto_list b{display: block;}
+.contacto_list li+li{margin-top:15px;}
+
+
+#quienes_somos .slider.into_section,
+#proyectos .slider.into_section {background: url(../img/quienes_somos.jpg) no-repeat center;background-size: cover;}
+#contacto .slider.into_section {background: url(../img/contacto_slider.jpg) no-repeat center;background-size: cover;}
+#servicios .slider.into_section {background: url(../img/servicios_slider.jpg) no-repeat center;background-size: cover;}
