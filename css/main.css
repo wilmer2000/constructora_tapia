@@ -326,6 +326,7 @@ footer p#email{padding-left:25px;background:url(../img/email_icon.svg) no-repeat
 .social li a{display:block;}
 .social li a img{display:block;width: 30px;height:auto;}
 
+#proyectos section#galeria .gallery li {width:100%!important}
 #proyectos section#galeria .gallery li+li{margin-top:80px}
 
 
