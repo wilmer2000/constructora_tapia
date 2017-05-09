@@ -1,3 +1,7 @@
+@media (max-width:1336px){
+ 	#home section#slider .owl_slide,
+ 	#home section#slider{height:auto;}
+}
 @media (max-width:1024px){
 	section#vivienda .flex_cont_,
 	section#proyectos .flex_cont_{flex-direction: column;}
@@ -12,8 +16,7 @@
 	.flex_cont_.doble .right_,
 	.flex_cont_.doble .left_{width:100%}
 
- 	#home section#slider .owl_slide,
- 	#home section#slider{height:auto;}
+
 	.slider .text_ h1{font-size: 2em;}
 	.slider .text_ h2{font-size: 1.5em;}
 	#home .slider .text_{    margin-top: 10%;width: 100%;align-self: flex-start;}
@@ -56,8 +59,11 @@
 	header ul{background:transparent;}
 	header ul li#logo a{display: block;text-align:center;margin-bottom:20px;}
 	header ul li:nth-child(2){display: none;}
-	header li a{font-size:1.5em;line-height:1em;}
+	header li a{font-size:1.5em;line-height:1em;text-align: left;}
 	header li#logo img{max-height:60px;}
+
+	header li .sub_menu{position: relative;display: block;}
+	header li .sub_menu ul{padding-left:50px;display: block;}
 
 	.menu_stick{display: none!important;}
 	.btn_menu{display: block;}

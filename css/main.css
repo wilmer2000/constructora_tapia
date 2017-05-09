@@ -121,11 +121,43 @@ background: linear-gradient(45deg,  rgba(68,29,4,1) 0%,rgba(76,56,20,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#441d04', endColorstr='#4c3814',GradientType=1 ); */
 }
 header li.
-.menu_stick ul li {line-height: 1em;}
+.menu_stick ul li {line-height: 1em;position: relative;}
+header ul li{position: relative;}
+header li .sub_menu,
+.menu_stick ul li .sub_menu{position: absolute;background: rgb(58, 58, 58);display:block;top: 100%;left: 0;display: none;}
+
+header ul >li:hover .sub_menu,
+.menu_stick ul >li:hover .sub_menu{display: block;}
+
+header ul li.triangle > a:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 7.5px 0 7.5px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -4px;
+}
+header ul.sub_menu li.triangle a:before{top: 25px;}
+
+header li .sub_menu >li{position: relative;display: block;}
+
+header li .sub_menu ul,
+.menu_stick ul li .sub_menu ul{display: none;background:#484747;}
+header li .sub_menu > li:hover ul,
+.menu_stick ul li .sub_menu > li:hover ul{display: block}
+
+header li .sub_menu ul li,
+.menu_stick ul li .sub_menu ul li{display: block;}
+
 header li a,
-.menu_stick li a{display: block;padding:15px;color:#FFF;text-align:center;font-family: 'UbuntuBold', sans-serif;font-size: 18px;text-transform: uppercase;}
+.menu_stick li a{display: block;padding:15px;color:#FFF;text-align:center;font-family: 'UbuntuBold', sans-serif;font-size: 18px;text-transform: uppercase;position: relative;}
 header li a:hover,
-.menu_stick ul li a:hover{color:  #C02729}
+.menu_stick ul li a:hover{color:  #C02729;}
 header li#logo ,
 .menu_stick #logo_stick{/* background:#FFF;padding:15px; */}
 header li#logo a,
@@ -145,11 +177,11 @@ header li svg,
 
 
 .owl_slide {position:relative;}
-.owl_slide:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
+.owl_slide:before{/*height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
 background: -moz-linear-gradient(top, rgba(192,39,41,0.65) 0%, rgba(0,0,0,0) 100%);
 background: -webkit-linear-gradient(top, rgba(192,39,41,0.65) 0%,rgba(0,0,0,0) 100%);
 background: linear-gradient(to bottom, rgba(192,39,41,0.65) 0%,rgba(0,0,0,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c02729', endColorstr='#00000000',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c02729', endColorstr='#00000000',GradientType=0 );*/
 }
 section#slider,
 section#quienes_somos{padding:30px;position:relative;}
@@ -176,11 +208,11 @@ section#quienes_somos{padding:30px;position:relative;}
 #slider .btn_slider.next_{right:30px;}
 #slider .btn_slider.back_{left:30px;}
 .slider.into_section{position:relative;height:300px;overflow:hidden;margin-bottom:60px;}
-.slider.into_section:before{height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
+.slider.into_section:before{/*height:100%;width: 100%;position:absolute;z-index: 1;content:"";display: block;
 background: -moz-linear-gradient(top, rgba(192,39,41,0.65) 0%, rgba(0,0,0,0) 100%);
 background: -webkit-linear-gradient(top, rgba(192,39,41,0.65) 0%,rgba(0,0,0,0) 100%);
 background: linear-gradient(to bottom, rgba(192,39,41,0.65) 0%,rgba(0,0,0,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c02729', endColorstr='#00000000',GradientType=0 );}
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c02729', endColorstr='#00000000',GradientType=0 );*/}
 .slider.into_section img.img_center{position:absolute;top:0;left: 0;width:100%;height: auto;display: block;z-index:0;}
 
 section#proyectos{padding:150px 0;}

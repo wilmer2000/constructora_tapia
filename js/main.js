@@ -39,8 +39,7 @@ $(document).ready(function(){
 			slider_principal.trigger('prev.owl.carousel');
 		}
 	});
-
-
+	
 	$(document).scroll(function(event) {
 		header_sticky();
 	});
